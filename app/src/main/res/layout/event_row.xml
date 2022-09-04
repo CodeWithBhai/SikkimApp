@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lightSound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/ultra_light_grey"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/note"
+                android:fontFamily="@font/metropolis_medium"
+                android:text="TCC: Bandra, they are onto something.."
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/note"
+                android:layout_marginTop="@dimen/twodp"
+                android:fontFamily="@font/metropolis_medium"
+                android:text="Ban Jharkand, Fall Down, india"
+                android:textSize="@dimen/ten" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/note"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/metropolis_medium"
+                    android:text="₹ "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tweleve" />
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/note"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/metropolis_medium"
+                    android:text="449/person "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tweleve" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/txtAddToBooking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/fivedp"
+                        android:background="@drawable/red_border_bg"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:padding="5dp"
+                        android:text="Add to Booking"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/elevensp" />
+                    <TextView
+                        android:id="@+id/txtAfterBooking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/fivedp"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        android:drawableLeft="@drawable/ic_baseline_blue_check_24"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:padding="5dp"
+                        android:text="  Added "
+                        android:textColor="#48487B"
+                        android:textSize="@dimen/elevensp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/addOnServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ultra_light_grey"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/addOnServicesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/addon_services_row"/>
+
+    </LinearLayout>
+
+</LinearLayout>

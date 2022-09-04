@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Partner.MyStaffActivity">
+
+    <RelativeLayout
+        android:id="@+id/myStaff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:layout_marginBottom="@dimen/fivedp"
+        android:background="@color/theme"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_20sdp"
+            android:onClick="back"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_back_arrow"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="Mt Staff"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_below="@id/note"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/tensp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/twodp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="@string/userName"
+            android:textSize="@dimen/elevensp" />
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:tint="#5BEB0203"
+            android:layout_marginTop="@dimen/tensp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_person_add_alt_1_24" />
+
+        <TextView
+            android:id="@+id/addStaffForm"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/fourtydp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@color/theme"
+            android:fontFamily="@font/metropolis_semi_bold"
+            android:text="Log In"
+            android:textSize="@dimen/fifteen"  />
+
+    </LinearLayout>
+
+</RelativeLayout>

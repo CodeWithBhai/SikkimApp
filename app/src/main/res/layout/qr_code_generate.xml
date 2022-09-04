@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/fivedp"
+        android:background="@drawable/dash_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ticketQRId"
+            android:layout_marginTop="@dimen/tensp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="123123123"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/ticketQRImg"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:scaleType="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/tensp"
+            android:src="@drawable/bar_code"
+            android:textColor="@color/white"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date_slotQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2022-20-30"
+                android:layout_margin="@dimen/fivedp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:fontFamily="@font/metropolis_medium"
+                android:textSize="@dimen/_11sdp"/>
+
+            <TextView
+                android:id="@+id/time_slotQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05:00PM-07:00PM"
+                android:layout_margin="@dimen/fivedp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:fontFamily="@font/metropolis_medium"
+                android:textSize="@dimen/_11sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/actEv"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Mela"
+            android:layout_margin="@dimen/fivedp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/metropolis_medium"
+            android:textSize="@dimen/_11sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

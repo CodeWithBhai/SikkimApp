@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#157D63</color>
+    <color name="purple_700">#157D63</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme">#EB0203</color>
+    <color name="light_red">#FAEF7A7B</color>
+    <color name="light_grey3">#EBEBEB</color>
+    <color name="light_account">#D5E5F4FB</color>
+    <color name="logo_yellow">#FFEB3B</color>
+    <color name="logo_yellow1">#C1F8ED91</color>
+    <color name="light_grey">#BCB9B9</color>
+    <color name="ultra_light_grey">#050B0A0A</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+
+
+
+    <array name="array_dot_active">
+
+        <item>@color/aqua</item>
+        <item>@color/aqua</item>
+        <item>@color/aqua</item>
+        <item>@color/aqua</item>
+        <item>@color/aqua</item>
+        <item>@color/aqua</item>
+        <item>@color/aqua</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+
+    </array>
+
+
+</resources>

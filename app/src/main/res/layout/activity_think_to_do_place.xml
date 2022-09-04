@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ThinkToDoPlaceActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/theme"
+        android:orientation="vertical"
+        android:padding="@dimen/fivedp">
+
+        <ImageView
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:onClick="back"
+            android:src="@drawable/ic_back_arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/txtPlaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="Ban Jhakra Water Fall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPlaceName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ten"
+            android:fontFamily="@font/metropolis_regular"
+            android:text="Place"
+            android:textColor="@color/white"
+            android:textSize="@dimen/elevensp" />
+
+        <ImageView
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginRight="@dimen/twentydp"
+            android:src="@drawable/ic_icon_material_share"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layoutsliderfilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/imageSliderMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative"
+                    android:orientation="vertical">
+
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/sliderView"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="@drawable/event_three"
+                        android:fadeScrollbars="true"
+                        android:requiresFadingEdge="horizontal"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderAutoCycleEnabled="true"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="10dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="2"
+                        app:sliderStartAutoCycle="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filterLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/imageSliderMain"
+                    android:background="@color/theme"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/filter1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yellow"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:gravity="center"
+                        android:text="Today"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/filter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yellow"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:gravity="center"
+                        android:text="Tomorrow"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/filter3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yellow"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:gravity="center"
+                        android:text="This Weekend"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:src="@drawable/ic_filter" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/upcomingEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/note"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:fontFamily="@font/metropolis_semi_bold"
+                android:text="Upcoming event at this place."
+                android:textSize="@dimen/sixteensp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/onefiftydp"
+                    android:background="@color/theme"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageMainImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/event_three" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/thirtyfive"
+                    android:layout_below="@+id/ll1"
+                    android:orientation="horizontal" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/frontMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="@dimen/onetwenty"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="@dimen/ten">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:src="@drawable/ic_profile_location"
+                            app:tint="@color/theme" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:orientation="vertical"
+                            android:paddingRight="@dimen/ten">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/note"
+                                android:fontFamily="@font/metropolis_bold"
+                                android:text="Location"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/tweleve" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/note"
+                                android:layout_marginTop="@dimen/twodp"
+                                android:fontFamily="@font/metropolis_medium"
+                                android:text="View Location on Share Location"
+                                android:textSize="@dimen/ten" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|right"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/searchActivity"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/circle_icons"
+                                android:padding="5dp"
+                                android:src="@drawable/ic_icon_material_share" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/note"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:gravity="center"
+                                android:text="Share"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/ten" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frontMain"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/metropolis_semi_bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/metropolis_semi_bold"
+                        android:text="@string/gallery"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/galleryRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_100sdp"
+                        tools:listitem="@layout/gallery_row" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

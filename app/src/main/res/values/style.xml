@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Smaller_Drawable">
+        <item name="android:textSize">10sp</item>
+        <item name="android:scaleX">0.6</item>
+        <item name="android:scaleY">0.6</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/fifteen</item>
+        <item name="fontFamily">@font/metropolis_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="tabGravity">center</item>
+        <item name="tabMaxWidth">0dp</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

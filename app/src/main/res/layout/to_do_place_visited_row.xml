@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/fivedp"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoryLayout"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/fivedp"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:id="@+id/imgCategory"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/event_two" />
+
+            <!-- YOUR CONTENT -->
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCategoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/metropolis_medium"
+                android:text="Buddha Park"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tweleve" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

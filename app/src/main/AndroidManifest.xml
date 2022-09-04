@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eminence.eventit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EventIT"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activities.ThinkToDoPlaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity android:name=".AllCategory.MusicCategory" />
+        <activity android:name=".AllCategory.CategorySport" />
+        <activity android:name=".AllCategory.AmusmentsPark" />
+        <activity android:name=".AllCategory.FoodCategory" />
+        <activity android:name=".Partner.Marchant.MerchantBookingHistory" />
+        <activity android:name=".Partner.Marchant.MarchantprofileDetails" />
+        <activity android:name=".Activities.UpComingEventActivity" />
+        <activity android:name=".Activities.EventDetails" />
+        <activity android:name=".Activities.SeeAllThinkToDo" />
+        <activity android:name=".Activities.SeeAllTopVisitors" />
+        <activity android:name=".QrScan.QrScanActivity" />
+        <activity android:name=".Partner.AddedBookingActivity" />
+        <activity android:name=".Partner.StaffBookingOrderDetailsActivity" />
+        <activity android:name=".Partner.StaffList" />
+        <activity
+            android:name=".ui.login.MyStaffList"
+            android:label="@string/title_activity_my_staff_list" />
+        <activity android:name=".Profiles.StaffProfileActivity" />
+        <activity android:name=".Partner.StaffDetailsActivity" />
+        <activity android:name=".Partner.AddStaffFormActivity" />
+        <activity android:name=".Partner.MyStaffActivity" />
+        <activity android:name=".Partner.TicketBookingDetailsActivity" />
+        <activity android:name=".Partner.StaffAllTicketScannerActivity" />
+        <activity android:name=".Partner.MarchantAllBooking" />
+        <activity android:name=".Category.CategoryName" />
+        <activity android:name=".Partner.PartnerStaffActivity" />
+        <activity android:name=".Activities.UpComingActivity" />
+        <activity android:name=".SecondSplashActivity" />
+        <activity android:name=".Activities.details.PlaceDetails" />
+        <activity android:name=".ImageSliderActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".HomeActivity.EventAboutActivity" />
+        <activity android:name=".Profiles.AddItemActivity" />
+        <activity android:name=".Profiles.TicketConfirmation" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".Accounts.TicketHistoryActivity" />
+        <activity android:name=".Profiles.EditProfileActivity" />
+        <activity android:name=".Profiles.MyLocationActivity" />
+        <activity android:name=".Profiles.HelpSupportActivity" />
+        <activity android:name=".Profiles.AboutUsActivity" />
+        <activity android:name=".Profiles.FeedbackActivity" />
+        <activity android:name=".Profiles.BookingHistoryActivity" />
+        <activity android:name=".Accounts.LogInActivity" />
+        <activity android:name=".Accounts.CreateAcountActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Profiles.AddItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#157D63"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/metropolis_bold"
+            android:gravity="center"
+            android:tint="@color/white"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="5"
+            android:fontFamily="@font/metropolis_medium"
+            android:gravity="center"
+            android:text="Ticket Confirmation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteen" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="150dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:background="@drawable/card_radius"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+
+                    android:src="@drawable/eventsimg"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="-90dp"
+        android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/ultra_light_grey"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/textView37"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/metropolis_bold"
+                                android:gravity="center"
+                                android:text="02 May 2022"
+                                android:textSize="11sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/metropolis_medium"
+                                android:text="TCC Bandra: They are onto something..."
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/fourteen" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/textView39"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:gravity="center_vertical"
+                                    android:src="@drawable/ic_baseline_access_time_24"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/textView40"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/metropolis_medium"
+                                    android:gravity="center_vertical"
+                                    android:text="Mon 09:00Am-8:00Pm"
+                                    android:textSize="@dimen/ten" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:gravity="center_vertical"
+                                    android:src="@drawable/ic_baseline_location_on_24"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:fontFamily="@font/metropolis_medium"
+                                    android:gravity="center_vertical"
+                                    android:text="New Delhi, Rajiv Chowk"
+                                    android:textSize="@dimen/ten" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/theme"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/metropolis_medium"
+                                        android:padding="3dp"
+                                        android:text="Get Direction"
+                                        android:textColor="@color/logo_yellow"
+                                        android:textSize="@dimen/seven"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:gravity="center_vertical"
+                                    android:src="@drawable/ic_filter"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/metropolis_bold"
+                                    android:gravity="center_vertical"
+                                    android:text="Comedy"
+                                    android:textColor="@color/theme"
+                                    android:textSize="@dimen/twelve" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metropolis_bold"
+        android:gravity="center"
+        android:text="Number Of Tickets"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fifteen" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/blue_bg"
+        android:fontFamily="@font/metropolis_medium"
+        android:gravity="center"
+        android:hint="ADD"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twentyFive" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#157D63"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/metropolis_bold"
+                android:gravity="center"
+                android:onClick="back"
+                android:src="@drawable/ic_baseline_attach_money_24"
+                android:tint="@color/logo_yellow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/metropolis_medium"
+                android:gravity="center"
+                android:text="200.00"
+                android:textColor="@color/logo_yellow"
+                android:textSize="@dimen/sixteen"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/metropolis_medium"
+                android:gravity="right|center"
+                android:text="Proceed"
+                android:textColor="@color/logo_yellow"
+                android:textSize="@dimen/sixteen" />
+
+            <ImageView
+                android:id="@+id/proceedToPaymentFinal"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/proceed_circle"
+                android:gravity="center"
+                android:tint="@color/theme"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

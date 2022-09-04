@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coffeeSnakes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/lightSound"
+    android:background="@color/ultra_light_grey"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtAddOnServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metropolis_medium"
+        android:text="@string/coffee"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tweleve" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note"
+        android:layout_marginTop="@dimen/twodp"
+        android:fontFamily="@font/metropolis_medium"
+        android:text="Ban Jharkand, Fall Down, india"
+        android:textSize="@dimen/ten" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twodp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/note"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="₹ "
+            android:textColor="@color/black"
+            android:textSize="@dimen/tweleve" />
+
+        <TextView
+            android:id="@+id/txtAddOnServicePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/note"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="449/person "
+            android:textColor="@color/black"
+            android:textSize="@dimen/tweleve" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/txtAddOn"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:background="@drawable/red_border_bg"
+                android:fontFamily="@font/metropolis_medium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Add On"
+                android:textColor="@color/white"
+                android:textSize="@dimen/elevensp" />
+            <TextView
+                android:id="@+id/txtAfterAddOn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/ic_baseline_blue_check_24"
+                android:fontFamily="@font/metropolis_medium"
+                android:padding="5dp"
+                android:text="  Added "
+                android:textColor="#48487B"
+                android:textSize="@dimen/elevensp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

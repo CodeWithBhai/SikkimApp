@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Partner.StaffBookingOrderDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/myStaff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:layout_marginBottom="@dimen/fivedp"
+        android:background="@color/theme"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_20sdp"
+            android:onClick="back"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_back_arrow"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="Od-8217836872673"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fivedp"
+        android:id="@+id/bookingDetails2"
+        android:layout_below="@+id/bookingDetails"
+        android:layout_marginTop="@dimen/tensp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="Booking Order Details"
+            android:textSize="@dimen/fourteensp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:fontFamily="@font/metropolis_regular"
+            android:text="Scanned On:"
+            android:textColor="#393737"
+            android:textSize="@dimen/ten" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:fontFamily="@font/metropolis_regular"
+            android:text="Todat 12:00 AM "
+            android:textColor="@color/theme"
+            android:textSize="@dimen/ten" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/marchantPage"
+        android:layout_below="@+id/bookingDetails2"
+        android:elevation="@dimen/tensp"
+        app:cardCornerRadius="@dimen/fivedp"
+        android:layout_margin="@dimen/tensp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ultra_light_grey"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/seventy"
+                android:layout_height="@dimen/seventy"
+                app:cardCornerRadius="@dimen/fivedp"
+                android:elevation="8dp"
+                android:background="@color/white"
+                android:layout_margin="@dimen/fifteen"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:clipToPadding="false"
+                android:clipChildren="false">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="@dimen/fiftydep"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:fontFamily="@font/metropolis_medium"
+                    android:gravity="center"
+                    android:text="05 MAY 2022"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/eighteen" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/twodp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:text="Order Number: "
+                        android:textColor="#393737"
+                        android:textSize="@dimen/ten" />
+
+                    <TextView
+                        android:id="@+id/orderNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:text="678678676767"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/twodp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:text="Booking Date:  "
+                        android:textColor="#393737"
+                        android:textSize="@dimen/ten" />
+
+                    <TextView
+                        android:id="@+id/bookingDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:text="02-May-2022"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/twodp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:text="Category name: "
+                        android:textColor="#393737"
+                        android:textSize="@dimen/ten" />
+
+                    <TextView
+                        android:id="@+id/categoryName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:text="Amusement Park"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkOut"
+        android:layout_margin="@dimen/tensp"
+        android:padding="@dimen/tensp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twodp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:text="Ticket"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:gravity="center|right"
+                android:text="X1"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:gravity="right"
+                android:text="500.00"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twodp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:text="GST 18%"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:gravity="center|right"
+                android:text="X1"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:gravity="right"
+                android:text="50.00"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twodp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:text="Booking Fee"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:gravity="center|right"
+                android:text="X1"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:gravity="right"
+                android:text="50.00"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/fivedp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twodp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_medium"
+                android:text="Total Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eleven" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:gravity="center|right"
+                android:text="X1"
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_medium"
+                android:gravity="right"
+                android:text="687.00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eleven" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="Ticket number"
+            android:layout_marginLeft="@dimen/tensp"
+            android:textSize="@dimen/fourteensp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/fivedp"
+            android:background="@color/ultra_light_grey"
+            android:padding="@dimen/fivedp"
+            android:id="@+id/confirmTicket"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="10dp"
+                android:src="@drawable/eventsimg"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/twodp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:text="Full Name Of User  "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tweleve" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/twodp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:text="Email Id "
+                        android:textSize="@dimen/elevensp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:layout_below="@+id/marchantPage"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/myLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="Ticket number"
+            android:layout_marginLeft="@dimen/tensp"
+            android:textSize="@dimen/fourteensp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/fivedp"
+            android:layout_margin="@dimen/tensp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/metropolis_medium"
+                android:text="TKT87676565645"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentydp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:fontFamily="@font/metropolis_medium"
+                    android:text="Ticket Scanned-Pass "
+                    android:layout_gravity="bottom|right"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/tweleve" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:fontFamily="@font/metropolis_medium"
+                    android:text="Ticket Scanned-Fail "
+                    android:layout_gravity="bottom|right"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/tweleve" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

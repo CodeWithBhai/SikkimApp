@@ -1,0 +1,58 @@
+<resources>
+    System.getProperty("line.separator")
+    <string name="app_name">BookMySikkimShow</string>
+    <string name="title_home">Events</string>
+    <string name="rupees">₹</string>
+    <string name="title_dashboard">My Tickets</string>
+    <string name="title_notifications">Profile</string>
+    <string name="covid">Covid Safety Guidelines</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="term_condition">Term &amp; Conditution</string>
+    <string name="dateDay">DAY &amp; DATE</string>
+    <string name="coffee">Coffee &amp; Snakes</string>
+    <string name="unlock">Unlock extra features &amp; great benefits</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">GOT IT</string>
+
+    <string name="demo_places">The Amazon is critical to our efforts to avoid a climate catastrophe.
+        Water vapor released from the Amazon creates vast “flying rivers” in the atmosphere, which
+
+        influence rainfall and thus agricultural production in central and southern South America.
+        And the billions of tons of carbon stored in the Amazon rain forest is of global importance
+        to slowing climate change.</string>
+
+
+    <string name="priseRange">PRICE RANGE</string>
+    <string name="category">Category</string>
+    <string name="note">Taxes and extra charges will be applicable at the time of checkout</string>
+    <string name="userName">hen you don’t have the time to write a personal message to every customer,
+        a review request text template is an efficient way to give your happy customers a voice.</string>
+
+    <string name="feedback_text">When you don’t have the time to write a personal message to every
+        customer, a review request text template is an efficient way to give your happy customers a
+        voice.
+
+Besides, text
+        messages have a 98% open rate and a 45% response rate. No other form of outreach comes close to these numbers.
+
+So if you’re not using textmessages to generate<br><br></br> Google reviews, you’re leaving a lot of
+            valuable social proof potential on the table. Google reviews are probably the most important type of reviews that you can earn for your business.
+
+Where do business owners struggle? </br>Brainstorming how to ask for the review in the text. There’s a valid fear of not knowing what to say. At the very least, you could simply say, “Review us on Google.” </string>
+    <string name="about_the_place"><u>About the Place</u></string>
+    <string name="best_time_to_visit"><u>Best Time To Visit</u></string>
+    <string name="gallery"><u>Gallery</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_my_staff_list">MyStaffList</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profiles.TicketConfirmation">
+
+    <RelativeLayout
+        android:id="@+id/checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:layout_marginBottom="@dimen/fivedp"
+        android:background="@color/theme"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_20sdp"
+            android:onClick="back"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_back_arrow"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="Check out"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkOut"
+        android:layout_marginStart="@dimen/tensp"
+        android:layout_marginEnd="@dimen/tensp"
+        android:layout_marginBottom="@dimen/tensp"
+        android:orientation="vertical"
+        android:padding="@dimen/tensp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Summery"
+                android:textSize="@dimen/eighteen"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fivedp"
+            android:layout_marginTop="@dimen/ten"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/priceListRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:text="GST 18%"
+                    android:textColor="#393737"
+                    android:textSize="@dimen/ten" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:gravity="center|right"
+                    android:text=""
+                    android:textColor="#393737"
+                    android:textSize="@dimen/ten" />
+
+                <TextView
+                    android:id="@+id/gst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:gravity="right"
+                    android:text="50.00"
+                    android:textColor="#393737"
+                    android:textSize="@dimen/ten" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:text="Booking Fee"
+                    android:textColor="#393737"
+                    android:textSize="@dimen/ten" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:gravity="center|right"
+                    android:text=""
+                    android:textColor="#393737"
+                    android:textSize="@dimen/ten" />
+
+                <TextView
+                    android:id="@+id/bookingFees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:gravity="right"
+                    android:text="50.00"
+                    android:textColor="#393737"
+                    android:textSize="@dimen/ten" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/fivedp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twodp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_medium"
+                android:text="Total Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteensp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_regular"
+                android:gravity="center|right"
+                android:text=""
+                android:textColor="#393737"
+                android:textSize="@dimen/ten" />
+
+            <TextView
+                android:id="@+id/totalPriceTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolis_medium"
+                android:gravity="right"
+                android:text="687.00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteensp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/proceedToPay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/theme"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/rupees"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/metropolis_bold"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/totalPriceShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="200.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/metropolis_medium"
+                    android:gravity="right|center"
+                    android:text="Pay Now"
+                    android:textColor="@color/logo_yellow"
+                    android:textSize="@dimen/fourteensp" />
+
+                <ImageView
+                    android:id="@+id/proceedToPayment"
+                    android:layout_width="wrap_content"
+                    android:padding="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:textSize="16sp"
+                    app:tint="@color/theme" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+</RelativeLayout>
